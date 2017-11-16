@@ -1,0 +1,203 @@
+$siteColor: #4C498E;
+@media (min-width: 768px)
+{
+}
+@media (max-width: 768px)
+{
+    #headline
+    {
+      padding: 40% 0 0 0;
+    }
+    .p-img
+    {
+      border-bottom: 10px solid $siteColor;
+    }
+}
+
+body {
+  font-family: "Open Sans", "Source Sans Pro", sans-serif;
+}
+nav
+{
+  position: fixed;
+  padding: 15px;
+  background: rgba(0,0,0,0.8)
+}
+
+.navbar > .navbar-right {
+    padding: 25px;
+}
+nav > ul
+{
+  list-style: none;
+}
+
+.navbar-item
+{
+  padding: 0px 10px;
+  font-size: 13pt;
+  border-right: 2px solid lighten($siteColor, 20%);
+  font-weight: 700;
+}
+
+nav > ul > li:last-child
+{
+  border-right: none;
+}
+
+nav > ul  > li > a:hover
+{
+  text-decoration: none;
+  color: lighten($siteColor, 35%);
+}
+
+nav > ul  > li > a:visited
+{
+  text-decoration: none;
+}
+
+nav > ul > li > a
+{
+  color: white;
+  -webkit-transition: 750ms;
+  transition: 500ms;
+}
+
+#main
+{
+  height: 100vh;
+  background: url(file:///C:/Users/krisb/Desktop/learn_js/portfolio/assets/img/backdrop-prod.jpeg) no-repeat center center;
+}
+#headline
+{
+  padding: 20% 0 0 0;
+}
+
+.heading {
+  font-size: 24pt;
+  font-weight: 900;
+  color: lighten($siteColor, 20%);
+}
+
+.subtitle {
+  font-size: 18pt;
+  color: lighten($siteColor, 40%);
+}
+
+#callout
+{
+  font-size: 13pt;
+  border: 2.5px solid $siteColor;
+  background: transparent;
+  font-weight: 900;
+  color: white;
+  margin-top: 25px;
+}
+
+#callout:hover {
+  color: white;
+  background: $siteColor;
+  transition: all 500ms;
+}
+
+a.active
+{
+  color: lighten($siteColor, 35%);
+}
+
+#skills
+{
+  background: lighten($siteColor, 10%);
+  padding: 25px;
+}
+
+.abilities-icon
+{
+  font-size: 48pt;
+}
+
+.abilities-caption
+{
+  font-size: 12pt;
+}
+
+.abilities-caption, .abilities-icon {
+  text-align: center;
+  font-weight: 900;
+  color: white;
+}
+.abilities
+{
+  transform: scale(0.7);
+  transition: all 1500ms;
+  border-right: 2px solid lighten($siteColor, 15%);
+  transform: scale(0.7);
+}
+
+.abilities:last-child
+{
+  border-right: none;
+}
+
+.abilities.active
+  {
+    transform: scale(1);
+  }
+.skills-headline
+{
+  color: white;
+  font-size: 24pt;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
+
+#portfolio-1 > .col-md-6, #portfolio-2 > .col-md-6
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.p-img:hover
+{
+  filter: blur(50%);
+  filter: brightness(50%);
+  transition: all 400ms;
+}
+#tdr:hover
+{
+  content: "<p>HELLO</p>"
+}
+
+#profile-wrapper{
+  background: $siteColor;
+  padding: 25px 0px;
+}
+.row
+{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#profile
+{
+  border: 1px lighten($siteColor, 5%) solid;
+  background: lighten($siteColor, 1%);
+  border-radius: 25px;
+  min-height: 95vh;
+  height: auto;
+  color: white;
+}
+#social
+{
+  margin: 10px 25px;
+}
+#social > a > i
+{
+  padding: 5px;
+  // margin: 20px 0px;
+  font-size: 24pt;
+  color: white;
+}
+
+#name {
+  font-weight: 900;
+}
